@@ -195,7 +195,7 @@ class Task(Base):
 
     # Score mode for the task.
     score_mode = Column(
-        Enum(SCORE_MODE_MAX_TOKENED_LAST, SCORE_MODE_MAX,
+        Enum(SCORE_MODE_MAX_TOKENED_LAST, SCORE_MODE_MAX, SCORE_MODE_ECOO, SCORE_MODE_MAX_JDCC,
              name="score_mode"),
         nullable=False,
         default=SCORE_MODE_MAX_TOKENED_LAST)
