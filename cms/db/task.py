@@ -40,7 +40,7 @@ from sqlalchemy.ext.orderinglist import ordering_list
 
 from . import Base, Contest
 from .smartmappedcollection import smart_mapped_collection, smc_sa10_workaround
-from cms import SCORE_MODE_MAX, SCORE_MODE_MAX_TOKENED_LAST
+from cms import SCORE_MODE_MAX, SCORE_MODE_MAX_TOKENED_LAST, SCORE_MODE_ECOO, SCORE_MODE_MAX_JDCC
 
 
 class Task(Base):
