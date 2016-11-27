@@ -125,7 +125,7 @@ class Score(object):
         #    time_bonuses = [(contest_time - submission.timestamp) / 5 for submission in self._submissions.values()]
         #    for submission, time_bonus in zip(self._submissions.values(), time_bonuses)
         #    score = max([0.0] + [submission.score + time_bonus for submission, time_bonus in zip(self._submission.values(), time_bonuses)])
-        elif self._score_mode == "last_jdcc":
+        elif self._score_mode == "ecoo":
             score = self._last.score if self._last is not None else 0.0;
             if len(self) == 1 and self._last.score == self._last.task.max_score:
                 score += 10
