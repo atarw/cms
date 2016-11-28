@@ -919,7 +919,7 @@ def task_score(user, task):
                 partial = True
 
         score = max_score
-    else:
+    elif task.score_mode == SCORE_MODE_MAX_TOKENED_LAST:
         # Like in IOI 2010-2012: maximum score among all tokened
         # submissions and the last submission.
 
@@ -949,5 +949,31 @@ def task_score(user, task):
                     partial = True
 
         score = max(last_score, max_tokened_score)
+    elif task.score_mode == SCORE_MODE_MAX_JDCC:
+        # take submission with best score, and add time bonus to it
+        # time bonus is calculated as follows: take the minutes left before the competition ends and divide by 5
+        # add 10 points if it is the first submission and a perfect score is achieved
+
+        max_score = 0.0
+        max_index = 0
+        sub_index = 0
+
+        for s in submissions:
+            sr = s.get_result(task.active_dataset)
+            if sr is not None and sr.scored():
+                if max_score < sr.score:
+                    max_score = sr.score
+                    max_index = sub_index
+            else:
+                partial = True
+            sub_index += 1
+
+        contest_end_time = user.contest.end
+        contest_start_time = user.contest.start
+
+        time_bonus = int ((contest_end_time - submissions [max_index].time) / 60 / 5)
+        score = max_score + time_bonus
+    elif task.score_mode == SCORE_MODE_ECOO:
+        # TODO: implement this
 
     return score, partial
