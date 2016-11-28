@@ -972,6 +972,11 @@ def task_score(user, task):
         contest_start_time = user.contest.start
 
         time_bonus = int ((contest_end_time - submissions [max_index].time) / 60 / 5)
+
+        # add +10 bonus if first submission by user ACs
+        if max_index == 0 and task.max_score == max_score:
+            time_bonus += 10
+
         score = max_score + time_bonus
     elif task.score_mode == SCORE_MODE_ECOO:
         # TODO: implement this
