@@ -980,5 +980,6 @@ def task_score(user, task):
         score = max_score + time_bonus
     elif task.score_mode == SCORE_MODE_ECOO:
         # TODO: implement this
+        pass
 
     return score, partial
