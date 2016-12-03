@@ -979,7 +979,20 @@ def task_score(user, task):
 
         score = max_score + time_bonus
     elif task.score_mode == SCORE_MODE_ECOO:
-        # TODO: implement this
-        pass
+        #TODO: implement this
+        # Like in IOI 2013-: maximum score amongst all submissions.
+
+        # The maximum score amongst all submissions (not yet computed
+        # scores count as 0.0).
+        max_score = 0.0
+
+        for s in submissions:
+            sr = s.get_result(task.active_dataset)
+            if sr is not None and sr.scored():
+                max_score = max(max_score, sr.score)
+            else:
+                partial = True
+
+        score = max_score
 
     return score, partial
