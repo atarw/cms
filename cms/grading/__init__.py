@@ -969,8 +969,9 @@ def task_score(user, task):
             sub_index += 1
 
         contest_end_time = user.contest.stop # used to be start, apparently user.contest is a db/contest object..
+        best_submission_time = submissions [max_index].timestamp # used to be time, apparently submissions stores db/submission objects..
 
-        time_bonus = int ((contest_end_time - submissions [max_index].time) / 60 / 5)
+        time_bonus = int ((contest_end_time - best_submission_time) / 60 / 5)
 
         # add +10 bonus if first submission by user ACs
         if max_index == 0 and task.max_score == max_score:
