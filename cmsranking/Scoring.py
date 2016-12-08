@@ -134,7 +134,7 @@ class Score (object):
 				task = max_sub.task
 				contest_end_time = task.contest.end
 
-				time_bonus = int ((contest_end_time - best_sub.time) / 300)
+				time_bonus = int ((contest_end_time - max_sub.time) / 300)
 
 				if max_index == 0 and task.max_score == max_score:
 					time_bonus += 10
@@ -142,10 +142,6 @@ class Score (object):
 				score = max_score + time_bonus
 			else:
 				score = 0
-		'''elif self._score_mode == "ecoo":
-			score = self._last.score if self._last is not None else 0.0;
-			if len (self) == 1 and self._last.score == self._last.task.max_score:
-				score += 10'''
 		else:
 			score = max (self._released.query (), self._last.score if self._last is not None else 0.0)
 

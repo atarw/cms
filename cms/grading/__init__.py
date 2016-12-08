@@ -968,8 +968,7 @@ def task_score(user, task):
                 partial = True
             sub_index += 1
 
-        contest_end_time = user.contest.end
-        contest_start_time = user.contest.start
+        contest_end_time = user.contest.stop # used to be start, apparently user.contest is a db/contest object..
 
         time_bonus = int ((contest_end_time - submissions [max_index].time) / 60 / 5)
 
