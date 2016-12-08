@@ -121,33 +121,31 @@ class Score (object):
 		#    for submission, time_bonus in zip(self._submissions.values(), time_bonuses)
 		#    score = max([0.0] + [submission.score + time_bonus for submission, time_bonus in zip(self._submission.values(), time_bonuses)])
 		elif self._score_mode == 'max_jdcc':
-			# take submission with best score, and add time bonus to it
-			# time bonus is calculated as follows: take the minutes left before the competition ends and divide by 5
-			# add 10 points if it is the first submission and a perfect score is achieved
+			max_score, max_sub, max_index, index = 0, None, 0, 0
 
-			max_score = 0.0
-			max_index = 0
-			sub_index = 0
-
-			for s in self._submissions.values ():
+			for s in self._submissions.values():
 				if max_score < s.score:
 					max_score = s.score
-					max_index = sub_index
+					max_sub = s
+					max_index = index
+				index += 1
 
-				sub_index += 1
+			if index != 0:
+				task = max_sub.task
+				contest_end_time = task.contest.end
 
-			contest_end_time = self._last.task.contest.end
-			time_bonus = int ((contest_end_time - self._submissions [max_index].time) / 60 / 5)
+				time_bonus = int ((contest_end_time - best_sub.time) / 300)
 
-			# add +10 bonus if first submission by user ACs
-			if max_index == 0 and self._last.task.max_score == max_score:
-				time_bonus += 10
+				if max_index == 0 and task.max_score == max_score:
+					time_bonus += 10
 
-			score = max_score + time_bonus
-		elif self._score_mode == "ecoo":
+				score = max_score + time_bonus
+			else:
+				score = 0
+		'''elif self._score_mode == "ecoo":
 			score = self._last.score if self._last is not None else 0.0;
 			if len (self) == 1 and self._last.score == self._last.task.max_score:
-				score += 10
+				score += 10'''
 		else:
 			score = max (self._released.query (), self._last.score if self._last is not None else 0.0)
 

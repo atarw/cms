@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f653cc8-6078-4da0-8586-7f4dbab9cbfa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cms/grading/__init__.py" afterPath="$PROJECT_DIR$/cms/grading/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmsranking/Scoring.py" afterPath="$PROJECT_DIR$/cmsranking/Scoring.py" />
     </list>
     <ignored path="cms.iws" />
@@ -24,31 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cms/grading/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="866">
-              <caret line="998" column="0" selection-start-line="998" selection-start-column="0" selection-end-line="998" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RankingWebServer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmsranking/RankingWebServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="105">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scoring.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Scoring.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmsranking/Scoring.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2899">
-              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+            <state relative-caret-position="690">
+              <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -57,7 +47,7 @@
       <file leaf-file-name="Task.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmsranking/Task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="15">
               <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
               <folding />
             </state>
@@ -67,7 +57,7 @@
       <file leaf-file-name="Contest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmsranking/Contest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
+            <state relative-caret-position="105">
               <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
               <folding />
             </state>
@@ -77,8 +67,18 @@
       <file leaf-file-name="Submission.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmsranking/Submission.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
+            <state relative-caret-position="525">
               <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cms/grading/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="950" column="3" selection-start-line="950" selection-start-column="3" selection-end-line="950" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -365,7 +365,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1053" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -401,12 +401,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/cmsranking/Scoring.py</url>
-          <line>103</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
@@ -428,25 +422,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmsranking/RankingWebServer.py">
+    <entry file="file://$PROJECT_DIR$/cmsranking/Submission.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        <state relative-caret-position="525">
+          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmsranking/Submission.py">
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2016.2/python_stubs/140606734/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="43" column="6" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="435">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmsranking/RankingWebServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmsranking/Task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="15">
           <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding />
         </state>
@@ -454,24 +456,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmsranking/Contest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
+        <state relative-caret-position="105">
           <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmsranking/Scoring.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2899">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cms/grading/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="866">
-          <caret line="998" column="0" selection-start-line="998" selection-start-column="0" selection-end-line="998" selection-end-column="0" />
+        <state relative-caret-position="146">
+          <caret line="950" column="3" selection-start-line="950" selection-start-column="3" selection-end-line="950" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmsranking/Scoring.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
           <folding />
         </state>
       </provider>
