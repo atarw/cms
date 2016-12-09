@@ -27,6 +27,7 @@ import logging
 from cmsranking.Submission import store as submission_store
 from cmsranking.Subchange import store as subchange_store
 from cmsranking.Task import store as task_store
+from cmsranking.Contest import store as contest_store
 
 logger = logging.getLogger (__name__)
 
@@ -131,12 +132,13 @@ class Score (object):
 				min_time = min (min_time, value.time)
 
 			if self._submissions:
-				task = max_sub.task
-				contest_end_time = 1481271681 # task.contest.end HARDCODE TEST
+				task = task_store.retrieve (max_sub.task)
+				contest_end_time = contest_store.retrieve (task.contest).end
+				# contest_end_time = 1481271681 # task.contest.end HARDCODE TEST
 
 				time_bonus = int ((contest_end_time - max_sub.time) / 300)
 
-				if min_time == max_sub.time and max_score == 100: # HARDCODE 100 POINTS FOR JDCC PROBLEM
+				if min_time == max_sub.time and max_score == task.max_score: # HARDCODE 100 POINTS FOR JDCC PROBLEM
 					time_bonus += 10
 
 				score = max_score + time_bonus
