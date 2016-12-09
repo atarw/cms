@@ -24,8 +24,8 @@ from __future__ import unicode_literals
 import heapq
 import logging
 
-import cmsranking
-
+from cmsranking.Task import Task as Task
+from cmsranking.Contest import Contest as Contest
 from cmsranking.Submission import store as submission_store
 from cmsranking.Subchange import store as subchange_store
 from cmsranking.Task import store as task_store
@@ -135,9 +135,9 @@ class Score (object):
 
 			if self._submissions:
 				task = task_store.retrieve (max_sub.task)
-				assert isinstance (task, cmsranking.Task), "not a task!!"
+				assert isinstance (task, Task), "not a task!!"
 				contest = contest_store.retrieve (task.contest)
-				assert isinstance (contest, cmsranking.Contest), "not a contest!!"
+				assert isinstance (contest, Contest), "not a contest!!"
 				contest_end_time = contest.end
 				# contest_end_time = 1481271681 # task.contest.end HARDCODE TEST
 
