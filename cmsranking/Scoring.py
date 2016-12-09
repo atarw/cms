@@ -143,7 +143,7 @@ class Score (object):
 
 				time_bonus = int ((contest_end_time - max_sub.time) / 300)
 
-				if min_time == max_sub.time and max_score == task.max_score: # HARDCODE 100 POINTS FOR JDCC PROBLEM
+				if min_time == max_sub.time and max_score == task ["max_score"]: # HARDCODE 100 POINTS FOR JDCC PROBLEM
 					time_bonus += 10
 
 				score = max_score + time_bonus
