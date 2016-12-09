@@ -139,14 +139,16 @@ class Score (object):
 				contest = contest_store.retrieve (task ["contest"])
 				# assert isinstance (contest, Contest), ("not a contest!!" + str (type (contest)))
 				contest_end_time = contest ["end"]
-				# contest_end_time = 1481271681 # task.contest.end HARDCODE TEST
 
-				time_bonus = int ((contest_end_time - max_sub.time) / 300)
+				if max_score == 0: # bonuses only apply for solutions that score points
+					score = 0
+				else:
+					time_bonus = int ((contest_end_time - max_sub.time) / 300)
 
-				if min_time == max_sub.time and max_score == task ["max_score"]: # HARDCODE 100 POINTS FOR JDCC PROBLEM
-					time_bonus += 10
+					if min_time == max_sub.time and max_score == task ["max_score"]:
+						time_bonus += 10
 
-				score = max_score + time_bonus
+					score = max_score + time_bonus
 			else:
 				score = 0
 		else:
