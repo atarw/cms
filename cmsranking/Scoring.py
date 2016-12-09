@@ -132,11 +132,11 @@ class Score (object):
 
 			if self._submissions:
 				task = max_sub.task
-				contest_end_time = 1481260810 # task.contest.end HARDCODE TEST
+				contest_end_time = 1481271681 # task.contest.end HARDCODE TEST
 
 				time_bonus = int ((contest_end_time - max_sub.time) / 300)
 
-				if min_time == max_sub.time and task.max_score == max_score:
+				if min_time == max_sub.time and max_score == 100: # HARDCODE 100 POINTS FOR JDCC PROBLEM
 					time_bonus += 10
 
 				score = max_score + time_bonus
