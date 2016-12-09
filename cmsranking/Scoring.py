@@ -121,22 +121,22 @@ class Score (object):
 		#    for submission, time_bonus in zip(self._submissions.values(), time_bonuses)
 		#    score = max([0.0] + [submission.score + time_bonus for submission, time_bonus in zip(self._submission.values(), time_bonuses)])
 		elif self._score_mode == 'max_jdcc':
-			max_score, max_sub, max_index, index = 0, None, 0, 0
+			max_score, max_sub, max_key, min_time = None, 0, 0, 100000000000
 
-			for s in self._submissions.values():
-				if max_score < s.score:
-					max_score = s.score
-					max_sub = s
-					max_index = index
-				index += 1
+			for key, value in self._submissions.iteritems ():
+				if max_score < value.score:
+					max_score = value.score
+					max_sub = value
+					max_key = key
+				min_time = min (min_time, value.time)
 
-			if index != 0:
+			if self._submissions:
 				task = max_sub.task
-				contest_end_time = task.contest.end
+				contest_end_time = 1481260810 # task.contest.end HARDCODE TEST
 
 				time_bonus = int ((contest_end_time - max_sub.time) / 300)
 
-				if max_index == 0 and task.max_score == max_score:
+				if min_time == max_sub.time and task.max_score == max_score:
 					time_bonus += 10
 
 				score = max_score + time_bonus
