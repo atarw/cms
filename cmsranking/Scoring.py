@@ -24,6 +24,8 @@ from __future__ import unicode_literals
 import heapq
 import logging
 
+import cmsranking
+
 from cmsranking.Submission import store as submission_store
 from cmsranking.Subchange import store as subchange_store
 from cmsranking.Task import store as task_store
