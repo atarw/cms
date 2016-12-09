@@ -133,7 +133,10 @@ class Score (object):
 
 			if self._submissions:
 				task = task_store.retrieve (max_sub.task)
-				contest_end_time = contest_store.retrieve (task.contest).end
+				assert isinstance (task, cmsranking.Task), "not a task!!"
+				contest = contest_store.retrieve (task.contest)
+				assert isinstance (contest, cmsranking.Contest), "not a contest!!"
+				contest_end_time = contest.end
 				# contest_end_time = 1481271681 # task.contest.end HARDCODE TEST
 
 				time_bonus = int ((contest_end_time - max_sub.time) / 300)

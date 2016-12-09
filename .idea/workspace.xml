@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f653cc8-6078-4da0-8586-7f4dbab9cbfa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmsranking/Scoring.py" afterPath="$PROJECT_DIR$/cmsranking/Scoring.py" />
     </list>
     <ignored path="cms.iws" />
@@ -24,21 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RankingWebServer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmsranking/RankingWebServer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Scoring.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cmsranking/Scoring.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="119" column="34" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+            <state relative-caret-position="386">
+              <caret line="137" column="74" selection-start-line="137" selection-start-column="74" selection-end-line="137" selection-end-column="74" />
               <folding>
                 <element signature="e#828#866#0" expanded="true" />
               </folding>
@@ -46,11 +35,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Store.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmsranking/Store.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="305" column="0" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Task.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmsranking/Task.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="86" column="54" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
+            <state relative-caret-position="90">
+              <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -69,8 +68,8 @@
       <file leaf-file-name="Contest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmsranking/Contest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+            <state relative-caret-position="90">
+              <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -621,24 +620,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmsranking/Contest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+        <state relative-caret-position="90">
+          <caret line="6" column="70" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmsranking/Store.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="305" column="0" selection-start-line="305" selection-start-column="0" selection-end-line="305" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmsranking/Task.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="86" column="54" selection-start-line="86" selection-start-column="54" selection-end-line="86" selection-end-column="54" />
+        <state relative-caret-position="90">
+          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmsranking/Scoring.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="119" column="34" selection-start-line="119" selection-start-column="34" selection-end-line="119" selection-end-column="34" />
+        <state relative-caret-position="386">
+          <caret line="137" column="74" selection-start-line="137" selection-start-column="74" selection-end-line="137" selection-end-column="74" />
           <folding>
             <element signature="e#828#866#0" expanded="true" />
           </folding>
