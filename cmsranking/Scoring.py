@@ -127,7 +127,7 @@ class Score (object):
 			max_score, max_sub, max_key, min_time = None, 0, 0, 100000000000
 
 			for key, value in self._submissions.iteritems ():
-				if max_score < value.score:
+				if max_score < value.score or max_score == value.score and value.time < max_sub.time:
 					max_score = value.score
 					max_sub = value
 					max_key = key
